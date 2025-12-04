@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* ブドウ販売ECサイト カラーパレット */
+:root {
+  /* 深紫（熟度・高級感） */
+  --grape-purple-900: #3B1A52;
+  --grape-purple-800: #4A2266;
+  --grape-purple-700: #5C2B7D;
+  --grape-purple-600: #6F3594;
+  --grape-purple-500: #8243A9;
+  
+  /* 暖色アクセント（食欲喚起） */
+  --appetite-red-600: #DC2626;
+  --appetite-red-500: #EF4444;
+  --appetite-yellow-500: #F59E0B;
+  --appetite-yellow-400: #FBBF24;
+  
+  /* 緑（新鮮さ） */
+  --fresh-green-600: #16A34A;
+  --fresh-green-500: #22C55E;
+  --fresh-green-400: #4ADE80;
+  
+  /* ベース */
+  --background: #FDFBF7;
+  --foreground: #1C1917;
+  --muted: #78716C;
+  --border: #E7E5E4;
+  
+  /* CTA */
+  --cta-primary: var(--appetite-red-600);
+  --cta-primary-hover: var(--appetite-red-500);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-grape-900: var(--grape-purple-900);
+  --color-grape-800: var(--grape-purple-800);
+  --color-grape-700: var(--grape-purple-700);
+  --color-grape-600: var(--grape-purple-600);
+  --color-grape-500: var(--grape-purple-500);
+  --color-appetite-red: var(--appetite-red-600);
+  --color-appetite-yellow: var(--appetite-yellow-500);
+  --color-fresh-green: var(--fresh-green-500);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.8;
+}
+
+/* タッチファースト: ボタン44px以上 */
+.btn-touch {
+  min-height: 44px;
+  min-width: 44px;
+}
